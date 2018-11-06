@@ -33,8 +33,8 @@ Radio: Radio configurations to store onboard radio system data
 
 """
 
-from hfos.schemata.defaultform import editbuttons
-from hfos.schemata.base import base_object
+from isomer.schemata.defaultform import editbuttons
+from isomer.schemata.base import base_object
 
 RadioConfigSchema = base_object('radio')
 

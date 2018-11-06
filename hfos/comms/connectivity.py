@@ -33,13 +33,13 @@ host to see if the node is currently online.
 
 import socket
 from time import time
-from hfos.component import ConfigurableComponent, handler
-from hfos.database import objectmodels
-from hfos.logger import error, warn, hilight, debug, verbose
-from hfos.nodestate.manager import backend_nodestate_toggle
+from isomer.component import ConfigurableComponent, handler
+from isomer.database import objectmodels
+from isomer.logger import error, warn, hilight, debug, verbose
+from isomer.nodestate.manager import backend_nodestate_toggle
 from circuits import Timer, Event
 
-from hfos.debugger import cli_register_event
+from isomer.debugger import cli_register_event
 
 STATE_UUID_CONNECTIVITY = '6d650454-e9b1-40ca-94a6-be817deb5448'
 
@@ -70,7 +70,7 @@ class ConnectivityMonitor(ConfigurableComponent):
         'timeout': {'type': 'integer', 'default': 30},
         'interval': {'type': 'integer', 'default': 30}
     }
-    channel = "hfosweb"
+    channel = 'isomer-web'
 
     def __init__(self, *args):
         super(ConnectivityMonitor, self).__init__("NETMON", *args)

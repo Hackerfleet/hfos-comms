@@ -40,9 +40,9 @@ This software package is a plugin module for HFOS.
 """,
       dependency_links=[],
       install_requires=['hfos>=1.2.0'],
-      entry_points="""[hfos.schemata]
+      entry_points="""[isomer.schemata]
     radioconfig=hfos.comms.radio:RadioConfig
-    [hfos.components]
+    [isomer.components]
     connectivitymonitor=hfos.comms.connectivity:ConnectivityMonitor
     """,
       test_suite="tests.main.main",
