@@ -3,7 +3,7 @@
 
 # HFOS - Hackerfleet Operating System
 # ===================================
-# Copyright (C) 2011-2018 Heiko 'riot' Weinen <riot@c-base.org> and others.
+# Copyright (C) 2011-2019 Heiko 'riot' Weinen <riot@c-base.org> and others.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -39,25 +39,41 @@ from isomer.schemata.base import base_object
 RadioConfigSchema = base_object('radio')
 
 RadioConfigSchema['properties'].update({
-    'model': {'type': 'string', 'minLength': 1, 'title': 'Model',
-              'description': 'Radio model'},
-    'manufacturer': {'type': 'string', 'minLength': 1,
-                     'title': 'Manufacturer',
-                     'description': 'Radio manufacturer'},
-    'radiotype': {'type': 'string', 'title': 'Type',
-                  'description': 'Type of radio'},
-    'color': {'type': 'string', 'title': 'Radio Color', 'format': 'color',
-              'description': 'Color used for map annotations etc'},
-    'tx-power': {'type': 'number', 'title': 'Radio transmission power',
-                 'description': 'Maximum Radio transmission power'},
-    'tx-height': {'type': 'number',
-                  'title': 'Radio transmitting antenna height',
-                  'description': 'Antenna mount height above water '
-                                 'surface'},
-    'tx-freq': {'type': 'number', 'title': 'Frequency',
-                'description': 'Default operating frequency'},
-    'notes': {'type': 'string', 'format': 'html', 'title': 'Radio notes',
-              'description': 'Custom radio notes'},
+    'model': {
+        'type': 'string', 'minLength': 1, 'title': 'Model',
+        'description': 'Radio model'
+    },
+    'manufacturer': {
+        'type': 'string', 'minLength': 1,
+        'title': 'Manufacturer',
+        'description': 'Radio manufacturer'
+    },
+    'radiotype': {
+        'type': 'string', 'title': 'Type',
+        'description': 'Type of radio'
+    },
+    'color': {
+        'type': 'string', 'title': 'Radio Color', 'format': 'color',
+        'description': 'Color used for map annotations etc'
+    },
+    'tx-power': {
+        'type': 'number', 'title': 'Radio transmission power',
+        'description': 'Maximum Radio transmission power'
+    },
+    'tx-height': {
+        'type': 'number',
+        'title': 'Radio transmitting antenna height',
+        'description': 'Antenna mount height above water '
+                       'surface'
+    },
+    'tx-freq': {
+        'type': 'number', 'title': 'Frequency',
+        'description': 'Default operating frequency'
+    },
+    'notes': {
+        'type': 'string', 'format': 'html', 'title': 'Radio notes',
+        'description': 'Custom radio notes'
+    },
 
 })
 
