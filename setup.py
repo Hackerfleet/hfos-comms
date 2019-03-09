@@ -55,7 +55,7 @@ Communication device assistance.
 This software package is a plugin module for HFOS.
 """,
     dependency_links=[],
-    install_requires=['isomer>=1.0.0'],
+    install_requires=['isomer>=1.0'],
     entry_points="""[isomer.schemata]
     radioconfig=isomer.comms.radio:RadioConfig
     [isomer.components]
